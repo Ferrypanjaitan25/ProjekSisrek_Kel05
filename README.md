@@ -1,17 +1,17 @@
-# 🎯 Final Project — Rating Prediction Recommender System (Option 1)
+# Final Project — Rating Prediction Recommender System (Option 1)
 Mata Kuliah: **12S4054 – Recommendation System**  
 Institut Teknologi Del  
 Semester: **Odd 2025/2026**
 
 ---
 
-## 📘 Deskripsi Proyek
+## Deskripsi Proyek
 Project ini merupakan implementasi dari **Option 1: Rating Prediction (Explicit Feedback)** pada tugas akhir mata kuliah Recommender System.  
 Tujuan utama project ini adalah membangun sistem rekomendasi yang mampu **memprediksi rating** yang akan diberikan user terhadap sebuah item menggunakan dataset Amazon 2023 Challenge (FIT512 S1 2025).
 
 ---
 
-## 📂 Dataset
+## Dataset
 Dataset diambil dari kompetisi Kaggle:
 
 - **train.csv** → berisi user_id, product_id, rating, dan metadata produk  
@@ -56,29 +56,29 @@ Spy plot menunjukkan bahwa hampir seluruh user-item matrix kosong — tipikal da
 
 ---
 
-## ⚙️ Metode yang Digunakan
+## Metode yang Digunakan
 
 Project ini menggunakan dua pendekatan utama:
 
 ---
 
-## 1️⃣ **Baseline Collaborative Filtering**
+## 1️ **Baseline Collaborative Filtering**
 
-### ✔ User-Based Collaborative Filtering  
+### User-Based Collaborative Filtering  
 - Menghitung similarity antar user (cosine similarity)  
 - Prediksi rating berdasarkan tetangga user (top-k)
 
-### ✔ Item-Based Collaborative Filtering  
+### Item-Based Collaborative Filtering  
 - Menghitung similarity antar item  
 - Prediksi rating berdasarkan item mirip yang pernah dirating user
 
-### 📏 Evaluasi Baseline  
+### Evaluasi Baseline  
 Metric: **RMSE (Root Mean Squared Error)**  
 Baseline digunakan sebagai model pembanding sebelum membuat model advanced.
 
 ---
 
-## 2️⃣ **Model Advanced — Matrix Factorization (SVD)**
+## 2️ **Model Advanced — Matrix Factorization (SVD)**
 
 Menggunakan library *Surprise*, model **SVD** dibangun untuk:
 - Menangani sparsity
@@ -89,7 +89,7 @@ SVD biasanya memberikan RMSE jauh lebih rendah dibanding CF memory-based.
 
 ---
 
-## 🧪 Evaluasi & Hasil
+## Evaluasi & Hasil
 
 - Evaluasi dilakukan menggunakan validasi 80/20 pada train.csv  
 - Metric utama: **RMSE**  
@@ -102,6 +102,6 @@ Model SVD dipilih untuk menghasilkan prediksi final pada test.csv.
 
 ---
 
-## 📤 Submission Kaggle
+## Submission Kaggle
 File submission yang dihasilkan:
 
